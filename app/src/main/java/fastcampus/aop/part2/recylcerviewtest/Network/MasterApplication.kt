@@ -19,7 +19,7 @@ class MasterApplication : Application() {
 
     fun createRetrofit() {
         val retrofit = Retrofit.Builder()
-            .baseUrl("https://s3.amazonaws.com/www.ultraapplock.com/api/")
+            .baseUrl("")
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
