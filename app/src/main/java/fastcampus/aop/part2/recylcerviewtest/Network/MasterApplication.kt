@@ -19,7 +19,7 @@ class MasterApplication : Application() {
 
     fun createRetrofit() {
         val retrofit = Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("YOUR_API")
             .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
             .addConverterFactory(GsonConverterFactory.create())
             .build()
